@@ -8,3 +8,10 @@ amd64: https://github.com/neovim/neovim/releases
 
 JetbrainsMono Nerd Font 而不是JetbrainsMono Nerd Font Mono
 字体下载: https://github.com/ryanoasis/nerd-fonts/releases
+
+## 其它依赖
+
+### 系统剪贴板
+```bash
+sudo apt install xclip
+```
