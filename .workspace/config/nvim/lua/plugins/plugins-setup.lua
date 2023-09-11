@@ -34,6 +34,22 @@ return require('packer').startup(function(use)
   use { "christoomey/vim-tmux-navigator" } -- 用 ctrl-h/j/k/l 定位窗口 -- tmux 配置后也可以一起用
   use { "nvim-treesitter/nvim-treesitter" } -- 语法高亮
   use { "p00f/nvim-ts-rainbow" } -- 不同颜色的括号匹配
+
+  -- lsp
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim", -- mason 和 lspconfig 的桥梁
+    "neovim/nvim-lspconfig",
+  }
+
+  -- cmp
+  use { "hrsh7th/nvim-cmp" }
+  use { "hrsh7th/cmp-nvim-lsp" }
+  use { "L3MON4D3/LuaSnip" } -- snippets 引擎
+  use { "saadparwaiz1/cmp_luasnip" }
+  use { "rafamadriz/friendly-snippets" }
+  use { "hrsh7th/cmp-path" } -- 文件路径
+
   if packer_bootstrap then
     require('packer').sync()
   end
