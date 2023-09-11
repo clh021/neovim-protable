@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
   use { "rafamadriz/friendly-snippets" }
   use { "hrsh7th/cmp-path" } -- 文件路径
 
+  use "numToStr/Comment.nvim" -- gcc和gc注释
+  use "windwp/nvim-autopairs" -- 自动补全括号
+
   if packer_bootstrap then
     require('packer').sync()
   end

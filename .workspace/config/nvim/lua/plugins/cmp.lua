@@ -61,6 +61,7 @@ cmp.setup({
   }),
 
   -- 这里重要
+  -- 添加更多补全插件时，要记得在这里引用
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
