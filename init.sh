@@ -18,5 +18,6 @@ else
    echo "Can't support this arch now."
 fi
 
+mkdir -p "$ROOT_WORKSPACE/bin/"
 echo wget -c "$download_url" -o "$ROOT_WORKSPACE/bin/_nvim.$archStr.appimage"
 wget -c "$download_url" -o "$ROOT_WORKSPACE/bin/_nvim.$archStr.appimage"
