@@ -11,15 +11,22 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+ -- PackerCompile
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
   augroup end
 ]])
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  -- use 仓库名
+  use 'folke/tokyonight.nvim' -- 主题
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
