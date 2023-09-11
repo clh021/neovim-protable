@@ -2,4 +2,4 @@
 /*.appimage
 /workspace
 .workspace/data
-.workspace/config/nvim/plugin/packer_compiled.lua
+.workspace/config/nvim/plugin/
