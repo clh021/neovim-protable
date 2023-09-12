@@ -3,6 +3,7 @@ local opt = vim.opt
 -- 行号
 opt.relativenumber = true
 opt.number = true
+opt.scrolloff = 8
 
 -- 缩进
 opt.tabstop = 2
