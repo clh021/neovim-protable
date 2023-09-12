@@ -14,3 +14,5 @@ require("plugins.cmp")
 require("plugins.comment")
 require("plugins.autopairs")
 
+require("plugins.gitsigns")
+
