@@ -1,5 +1,6 @@
 local opt = vim.opt
 local autocmd = vim.api.nvim_create_autocmd
+local term_mode = vim.api.nvim_create_augroup("TERM_MODE", {clear = true})
 
 -- 行号
 opt.relativenumber = true
@@ -37,3 +38,6 @@ vim.cmd[[colorscheme tokyonight-moon]]
 -- 只在编辑模式(非输入时)使用相对行号
 autocmd({ "InsertEnter" }, { pattern = { "*" }, command = "set nornu" })
 autocmd({ "InsertLeave" }, { pattern = { "*" }, command = "set rnu" })
+
+--打开终端自动进入插入模式
+autocmd({"TermOpen"}, { pattern = "*", group = term_mode, command = [[normal i]] })
