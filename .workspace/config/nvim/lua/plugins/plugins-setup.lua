@@ -27,10 +27,10 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  -- use {
-  --   'nvim-tree/nvim-tree.lua',
-  --   requires = { 'nvim-tree/nvim-web-devicons' }
-  -- }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    -- requires = { 'nvim-tree/nvim-web-devicons' }
+  }
   use { "christoomey/vim-tmux-navigator" } -- 用 ctrl-h/j/k/l 定位窗口 -- tmux 配置后也可以一起用
   use { "nvim-treesitter/nvim-treesitter" } -- 语法高亮
   use { "p00f/nvim-ts-rainbow" } -- 不同颜色的括号匹配
