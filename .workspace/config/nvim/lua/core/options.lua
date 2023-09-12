@@ -41,3 +41,16 @@ autocmd({ "InsertLeave" }, { pattern = { "*" }, command = "set rnu" })
 
 --打开终端自动进入插入模式
 autocmd({"TermOpen"}, { pattern = "*", group = term_mode, command = [[normal i]] })
+
+-- 自动切换中文输入法
+-- 只针对 Linux 平台中的 Fcitx5 框架其他平台, 可安装 im-select 插件
+vim.api.nvim_create_autocmd({ "InsertLeave" }, {
+    pattern = { "*" },
+    callback = function()
+        local input_status = tonumber(vim.fn.system("fcitx5-remote"))
+        if input_status == 2 then
+            vim.fn.system("fcitx5-remote -c")
+        end
+    end,
+})
+
