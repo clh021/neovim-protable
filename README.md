@@ -20,6 +20,7 @@ sudo apt install xclip
 ## 使用
 ```bash
 ./s.sh
+./s.sh /path/to/file
 ```
 设置别名
 ```bash
@@ -30,4 +31,6 @@ else
     alias nvim="just command: git clone --depth=1 https://github.com/clh021/neovim-protable.git"
 fi
 # use nvim just like bin nvim
+# nvim
+# nvim /path/to/file
 ```

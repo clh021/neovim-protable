@@ -3,3 +3,4 @@
 /workspace
 .workspace/data
 .workspace/config/nvim/plugin/
+.workspace/config/google-chrome
