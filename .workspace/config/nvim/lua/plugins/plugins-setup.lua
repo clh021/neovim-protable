@@ -50,8 +50,12 @@ return require('packer').startup(function(use)
   use { "rafamadriz/friendly-snippets" }
   use { "hrsh7th/cmp-path" } -- 文件路径
 
+  -- comment
   use "numToStr/Comment.nvim" -- gcc和gc注释
   use "windwp/nvim-autopairs" -- 自动补全括号
+
+  -- git
+  use "lewis6991/gitsigns.nvim"
 
   if packer_bootstrap then
     require('packer').sync()
