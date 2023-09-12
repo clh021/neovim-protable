@@ -25,11 +25,11 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim' -- 主题
   use {
     'nvim-lualine/lualine.nvim',
-    -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   use {
     'nvim-tree/nvim-tree.lua',
-    -- requires = { 'nvim-tree/nvim-web-devicons' }
+    requires = { 'nvim-tree/nvim-web-devicons' }
   }
   use { "christoomey/vim-tmux-navigator" } -- 用 ctrl-h/j/k/l 定位窗口 -- tmux 配置后也可以一起用
   use { "nvim-treesitter/nvim-treesitter" } -- 语法高亮
