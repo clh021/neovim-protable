@@ -8,7 +8,7 @@ require("mason").setup({
     }
 })
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls" },
+    ensure_installed = { "lua_ls", "bashls" },
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
