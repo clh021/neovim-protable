@@ -1,4 +1,5 @@
 local opt = vim.opt
+local autocmd = vim.api.nvim_create_autocmd
 
 -- 行号
 opt.relativenumber = true
@@ -31,3 +32,8 @@ opt.signcolumn = "yes"
 
 -- 主题
 vim.cmd[[colorscheme tokyonight-moon]]
+
+
+-- 只在编辑模式(非输入时)使用相对行号
+autocmd({ "InsertEnter" }, { pattern = { "*" }, command = "set nornu" })
+autocmd({ "InsertLeave" }, { pattern = { "*" }, command = "set rnu" })
