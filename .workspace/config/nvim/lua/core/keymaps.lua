@@ -26,3 +26,7 @@ keymap.set("n", "<leader>ft", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>e",  ":NvimTreeFocus<CR>")
 -- keymap.set("n", "<leader>ft", "<C-w>v:Ntree<CR>")
 
+keymap.set("n", "<leader>-",  ":resize +9<CR>")
+keymap.set("n", "<leader>=",  ":resize -9<CR>")
+keymap.set("n", "<leader>,",  ":vert resize +9<CR>")
+keymap.set("n", "<leader>.",  ":vert resize -9<CR>")
