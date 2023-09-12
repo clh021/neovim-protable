@@ -16,3 +16,18 @@ JetbrainsMono Nerd Font 而不是JetbrainsMono Nerd Font Mono
 ```bash
 sudo apt install xclip
 ```
+
+## 使用
+```bash
+./s.sh
+```
+设置别名
+```bash
+# nvim-protable
+if [ -f "$HOME/Projects/neovim-protable/s.sh" ]; then
+    alias nvim="$HOME/Projects/neovim-protable/s.sh"
+else
+    alias nvim="just command: git clone --depth=1 https://github.com/clh021/neovim-protable.git"
+fi
+# use nvim just like bin nvim
+```
