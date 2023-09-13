@@ -23,6 +23,7 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<leader>ft", ":NvimTreeToggle<CR>")
+keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>e",  ":NvimTreeFocus<CR>")
 -- keymap.set("n", "<leader>ft", "<C-w>v:Ntree<CR>")
 
