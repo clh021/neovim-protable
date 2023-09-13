@@ -48,3 +48,10 @@ require("formatter").setup({
 		},
 	},
 })
+
+vim.cmd([[
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost *.lua FormatWrite
+augroup END
+]])
