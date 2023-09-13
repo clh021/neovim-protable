@@ -28,3 +28,9 @@ keymap.set("n", "<leader>w-", ":resize +9<CR>")
 keymap.set("n", "<leader>w=", ":resize -9<CR>")
 keymap.set("n", "<leader>w,", ":vert resize +9<CR>")
 keymap.set("n", "<leader>w.", ":vert resize -9<CR>")
+
+keymap.set("n", "<leader>ft", ":NvimTreeToggle<CR>")
+keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>")
+
+keymap.set("n", "<leader>F", ":Format<CR>")
