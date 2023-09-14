@@ -19,6 +19,9 @@ opt.wrap = false
 -- 系统剪贴板
 opt.clipboard:append("unnamedplus")
 
+-- 关闭swapfile
+opt.swapfile = false
+
 -- 默认新窗口右下
 opt.splitright = true
 opt.splitbelow = true
