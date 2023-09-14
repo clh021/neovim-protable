@@ -20,7 +20,7 @@ return {
 				-- enable autotagging (w/ nvim-ts-autotag plugin)
 				autotag = { enable = true },
 				-- ensure these language parsers are installed
-				ensure_installed = {
+				      ensure_installed = {
 					"json",
 					"javascript",
 					"typescript",
